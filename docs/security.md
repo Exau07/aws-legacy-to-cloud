@@ -1,11 +1,11 @@
-# Terraform Security
+# Sécurité Terraform
 
-## Credentials Management
-- Terraform uses a dedicated IAM role
-- No long-lived admin credentials
-- Role assumed via AWS STS
+## Gestion des identifiants
+- Terraform utilise un rôle IAM dédié.
+- Pas d'identifiants d'administrateur à longue durée de vie.
+- Rôle assumé via AWS STS.
 
-## Benefits
-- Reduced blast radius
-- Full audit via CloudTrail
-- Production-ready posture
+## Avantages
+- Réduction du rayon d'action.
+- Audit complet via CloudTrail.
+- Posture prête pour la production.
