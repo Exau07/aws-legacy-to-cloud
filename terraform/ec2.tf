@@ -36,3 +36,19 @@ resource "aws_launch_template" "this" {
     }
   }
 }
+
+########################################
+# EC2 Instance – Right Sizing
+########################################
+
+resource "aws_instance" "app" {
+  ami           = var.ami_id
+
+  # FinOps: instance volontairement modeste
+  instance_type = "t3.micro"
+
+  tags = {
+    Name    = "${var.project_name}-app"
+    FinOps  = "right-sized"
+  }
+}
